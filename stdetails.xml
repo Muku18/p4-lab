@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css"?>
+<students>
+   <h> Students data </h>
+  <student1>
+    <usn>1CR19CS099</usn>
+    <name>Mukesh Kumar</name>
+    <college>CMRIT</college>
+    <yoj>2019</yoj>
+    <email>muku19cs@cmrit.ac.in</email>
+  </student1>
+  <student2>
+    <usn>1CR19CS094</usn>
+    <name>Mithun Kumar</name>
+    <college>CMRIT</college>
+    <yoj>2019</yoj>
+    <email>musa19cs@cmrit.ac.in</email>
+  </student2>
+  <student3>
+    <usn>1CR19CS094</usn>
+    <name>Hritik Kumar</name>
+    <college>CMRIT</college>
+    <yoj>2019</yoj>
+    <email>molu19cs@cmrit.ac.in</email>
+  </student3>
+  
+</students>
+

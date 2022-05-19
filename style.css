@@ -1,0 +1,13 @@
+student1,student2,student3{
+    display: block;
+    margin: 10px;
+}
+usn,name,college,email,yoj{
+    padding: 4px;
+}
+
+h{
+    margin: 180px;
+    padding: 30px;
+    font-size:20px;
+}
