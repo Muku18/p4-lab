@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>p4 lab</title>
+    <style>
+        *{
+            font-size : 20px;
+        }
+        .x{
+            display: none;
+        }
+        .b{
+            background-color: #0d6efd;
+            width : 130px;
+            height: 46px;
+            color: white;
+            border-radius: 6px;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <script>
+        function Vow(){
+            var n = prompt("Enter String"," ");
+            var s = n.toLowerCase();
+            
+            var l = s.length;
+            var index = 0;
+            var firstvowel = "";
+            var c = ""
+            for(var i=0;i<l;i++){
+                c = s.charAt(i);
+                if(c == 'a'||c=='e'||c=='i'||c=='o'||c=='u'){
+                    index = i + 1;
+                    firstvowel = c;
+                    break;
+                }
+               
+            }
+            document.getElementById("result").value = "position of left most vowel = " + index;
+            document.getElementById("y").style.display = "block";
+        }
+        function pal(){
+            var n = prompt("Enter a number"," ");
+            var num =  parseInt(n);
+            var temp = num;
+            var rem = 0;
+            var rev = 0;
+            while(num>0){
+                rem = num%10;
+                rev = rev*10 +rem;
+                num = Math.floor(num/10);
+            }
+            if(temp == rev){
+                document.getElementById("result").value = "palindrome";
+                document.getElementById("y").style.display = "block";
+            }
+            else{
+                document.getElementById("result").value = "Not palindrome";
+                document.getElementById("y").style.display = "block";
+            }
+
+        }
+    </script>
+</head>
+
+
+<body>
+   
+    <form class = "container mt-5 border border-3 pt-5 ps-5 pe-5 pb-5">
+        <div class="mb-3 x" id = "y">
+          <label for="result" class="form-label">Result</label>
+          <input type="text" class="form-control" id="result" aria-describedby="emailHelp">
+          
+        </div>
+    
+        <input type="button" class="btn btn-primary mb-4" value = "palindrome" onclick = "pal()"/>
+        <input type="button" class="btn btn-primary mb-4" value = "LeftmostVowel" onclick="Vow()"/><br>
+        <button class= "b"> <a href = "index.html">Home</a> </button>
+      </form>
+
+
+  
+</body>
+
+</html>
